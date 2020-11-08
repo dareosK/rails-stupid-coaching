@@ -1,0 +1,19 @@
+<h1>STUPID COACHING</h1>
+<h4>Here's what the coach says:</h4>
+<blockquote>
+  <p>
+    <% if @question.blank? %>
+      😶
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Coach</cite>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
